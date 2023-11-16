@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulation</title>
+    <script defer src="js/manipulate.js"></script>
+    <style>
+        h1 {
+            background-color: yellow;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .abc {
+            text-decoration: underline;
+        }
+
+        .edf {
+            color: blue;
+        }
+
+        #outer {
+            margin-top: 20px;
+            width: 400px;
+            height: 200px;
+            overflow: scroll;
+            position: relative;
+            background-color: yellow;
+        }
+
+        #inner {
+            position: absolute;
+            background-color: red;
+            border-left: 10px solid black;
+            border-top: 10px solid black;
+            width: 100px;
+            height: 100px;
+            left: 410px;
+            top: 210px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Manipulation</h1>
+    <ul>
+        <li>First</li>
+        <li>Second</li>
+    </ul>
+    <h2 class="abc edf"><mark>H</mark>e<em>ll</em>o</h2>
+    <h3>Heading <mark>3</mark></h3>
+    <button id="btn-1" type="button">Underline</button>
+    <button id="btn-2" type="button">Color</button>
+    <div id="outer">
+        <div id="inner"></div>
+    </div>
+</body>
+</html>

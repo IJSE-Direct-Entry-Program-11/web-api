@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <!-- <script defer src="js/main.js"></script> -->
+    <!-- <script defer src="js/event.js"></script> -->
+    <script defer src="js/delegated-events.js"></script>
+    <style>
+        h1 {
+            background-color: yellow;
+        }
+
+        table {
+            margin-top: 10px;
+        }
+
+        table, tr, td {
+            border: 1px solid black;
+            border-collapse:  collapse;
+            padding: 10px;
+        }
+
+        tr {
+            cursor: pointer;
+        }
+
+        tr:hover{
+            background-color: lightgray;
+        }
+
+        tr:focus {
+            outline: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1 tabindex="5">Events</h1>
+    <a href="https://www.google.lk">Visit Google</a>
+    <input type="text" tabindex="4"> 
+    <button type="button" onclick="(function(){alert('okay')})()">Display</button> <br>
+    <button type="button" onclick="handler1()">Click Me</button> <br>
+    <button id="btn" type="button">Click Me Please</button> <br>
+    <label>Output: </label>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>DELETE</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>C001</td>
+                <td>K<b>as</b>un</td>
+                <td><button type="button">DELETE</button></td>
+            </tr>
+            <tr>
+                <td>C002</td>
+                <td>Nuwan</td>
+                <td><button type="button">DELETE</button></td>
+            </tr>
+            <tr>
+                <td>C003</td>
+                <td>Ruwan</td>
+                <td><button type="button">DELETE</button></td>
+            </tr>            
+        </tbody>
+    </table>
+</body>
+</html>

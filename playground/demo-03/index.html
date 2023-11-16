@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo 03</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/cursor.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .box {
+            position: absolute;
+        }
+
+        #circle{
+            background-color: lime;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            transition: background-color 800ms;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div id="circle" class="animate__animated animate__tada animate__infinite"></div>
+</body>
+</html>
